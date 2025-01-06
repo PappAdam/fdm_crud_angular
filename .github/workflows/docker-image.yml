@@ -1,16 +1,22 @@
-services:
-  json-server:
-    build:
-      context: .
-      dockerfile: Dockerfile.angular
-    ports:
-      - "3000:3000"
+name: Docker Image CI
 
-  angular:
-    build:
-      context: .
-      dockerfile: Dockerfile.json-server
-    ports:
-      - "4200:80"
-    depends_on:
-      - json-server
+on:
+  workflow_dispatch:
+  push:
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: |
+          echo "TAG=$(date +%s)" >> $GITHUB_ENV
+      - uses: actions/checkout@v4
+      - run: |
+          docker build . --file Dockerfile.angular --tag ghcr.io/pappadam/fdm_crud_angular:$TAG --tag ghcr.io/pappadam/fdm_crud_angular:latest
+          docker login ghcr.io -u pappadam -p ${{secrets.GHCR_TOKEN}}
+          docker push ghcr.io/pappadam/fdm_crud_angular:$TAG
+          docker push ghcr.io/pappadam/fdm_crud_angular:latest
