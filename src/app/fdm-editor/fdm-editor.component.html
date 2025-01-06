@@ -1,48 +1,55 @@
 <div class="modal">
-    <div class="modal-content">
+  <div class="modal-content">
       <h2>Edit FDM Printer</h2>
-  
+
       <form>
-        <label>
-          Model:
-          <input
-            type="text"
-            value="{{fdmData?.model}}"
-            name="model"
-            required
-          />
-        </label>
-        <label>
-          Brand:
-          <input
-            type="text"
-            value="{{fdmData?.brand}}"
-            name="brand"
-            required
-          />
-        </label>
-        <label>
-          Price:
-          <input
-            type="number"
-            value="{{fdmData?.price}}"
-            name="price"
-            required
-          />
-        </label>
-        <label>
-          Notable Features:
-          <textarea
-            value="{{fdmData?.notable_features}}"
-            name="notable_features"
-          ></textarea>
-        </label>
+          <div class="form-group">
+              <label for="model">Model:</label>
+              <input
+                  type="text"
+                  id="model"
+                  value="{{fdmData?.model}}"
+                  name="model"
+                  required
+              />
+          </div>
+
+          <div class="form-group">
+              <label for="brand">Brand:</label>
+              <input
+                  type="text"
+                  id="brand"
+                  value="{{fdmData?.brand}}"
+                  name="brand"
+                  required
+              />
+          </div>
+
+          <div class="form-group">
+              <label for="price">Price:</label>
+              <input
+                  type="number"
+                  id="price"
+                  value="{{fdmData?.price}}"
+                  name="price"
+                  required
+              />
+          </div>
+
+          <div class="form-group">
+              <label for="notable_features">Notable Features:</label>
+              <textarea
+                  id="notable_features"
+                  name="notable_features"
+                  rows="4"
+              >{{fdmData?.notable_features}}</textarea>
+          </div>
       </form>
-  
+
       <div class="modal-actions">
-        <button (click)="cancel()">Cancel</button>
-        <button (click)="save()">Save</button>
+          <button class="cancel-btn" (click)="cancel()">Cancel</button>
+          <button class="save-btn" (click)="save()">Save</button>
       </div>
-    </div>
   </div>
-  <div class="modal-backdrop"></div>
+</div>
+<div class="modal-backdrop"></div>
