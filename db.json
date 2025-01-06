@@ -1,0 +1,112 @@
+{
+  "fdm_printers": [
+    {
+      "model": "Ensdr 3 asdV2",
+      "brand": "Creality",
+      "price": 299.99,
+      "notable_features": [
+        "Silent motherboard",
+        "Carborundum glass platform",
+        "Resume print function",
+        "Intuitive UI interface"
+      ],
+      "id": "0"
+    },
+    {
+      "model": "Prusa i3 MK3S+",
+      "brand": "Prusa Research",
+      "price": 799,
+      "notable_features": [
+        "Automatic bed leveling",
+        "Filament sensor",
+        "Power-loss recovery",
+        "Customizable open-source firmware"
+      ],
+      "id": "1"
+    },
+    {
+      "model": "Artillery Sidewinder X2",
+      "brand": "Artillery",
+      "price": 459,
+      "notable_features": [
+        "Direct drive extruder",
+        "Auto bed leveling",
+        "Large build volume",
+        "Touchscreen interface"
+      ],
+      "id": "2"
+    },
+    {
+      "model": "Anycubic Kobra",
+      "brand": "Anycubic",
+      "price": 319,
+      "notable_features": [
+        "LeviQ auto bed leveling",
+        "Integrated direct drive extruder",
+        "Fast assembly",
+        "User-friendly touchscreen"
+      ],
+      "id": "3"
+    },
+    {
+      "model": "FlashForge Adventurer 3",
+      "brand": "FlashForge",
+      "price": 369,
+      "notable_features": [
+        "Enclosed build chamber",
+        "Removable flexible build plate",
+        "Built-in camera",
+        "Filament detection"
+      ],
+      "id": "4"
+    },
+    {
+      "model": "MakerBot Replicator+",
+      "brand": "MakerBot",
+      "price": 1999,
+      "notable_features": [
+        "Cloud-enabled",
+        "On-board camera",
+        "Flexible build plate",
+        "High-speed printing"
+      ],
+      "id": "5"
+    },
+    {
+      "model": "Qidi Tech X-Plus",
+      "brand": "Qidi Technology",
+      "price": 6299,
+      "notable_features": [
+        "Dual extrusion capability",
+        "Fully enclosed chamber",
+        "Quiet printing",
+        "Flexible build plate"
+      ],
+      "id": "6"
+    },
+    {
+      "model": "Creality CR-10 Smart Pro",
+      "brand": "Creality",
+      "price": 649,
+      "notable_features": [
+        "WiFi remote control",
+        "All-metal direct drive extruder",
+        "Auto bed leveling",
+        "Large touchscreen interface"
+      ],
+      "id": "7"
+    },
+    {
+      "model": "Voxelab Aquila",
+      "brand": "Voxelab",
+      "price": 199,
+      "notable_features": [
+        "Budget-friendly",
+        "Large build volume",
+        "Resume printing function",
+        "High-temperature nozzle"
+      ],
+      "id": "8"
+    }
+  ]
+}

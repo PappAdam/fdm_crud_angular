@@ -1,0 +1,48 @@
+<div class="modal">
+    <div class="modal-content">
+      <h2>Edit FDM Printer</h2>
+  
+      <form>
+        <label>
+          Model:
+          <input
+            type="text"
+            value="{{fdmData?.model}}"
+            name="model"
+            required
+          />
+        </label>
+        <label>
+          Brand:
+          <input
+            type="text"
+            value="{{fdmData?.brand}}"
+            name="brand"
+            required
+          />
+        </label>
+        <label>
+          Price:
+          <input
+            type="number"
+            value="{{fdmData?.price}}"
+            name="price"
+            required
+          />
+        </label>
+        <label>
+          Notable Features:
+          <textarea
+            value="{{fdmData?.notable_features}}"
+            name="notable_features"
+          ></textarea>
+        </label>
+      </form>
+  
+      <div class="modal-actions">
+        <button (click)="cancel()">Cancel</button>
+        <button (click)="save()">Save</button>
+      </div>
+    </div>
+  </div>
+  <div class="modal-backdrop"></div>
