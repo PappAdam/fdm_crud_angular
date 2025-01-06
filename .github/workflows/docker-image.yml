@@ -1,0 +1,16 @@
+services:
+  json-server:
+    build:
+      context: .
+      dockerfile: Dockerfile.angular
+    ports:
+      - "3000:3000"
+
+  angular:
+    build:
+      context: .
+      dockerfile: Dockerfile.json-server
+    ports:
+      - "4200:80"
+    depends_on:
+      - json-server
